@@ -1,0 +1,42 @@
+🔍 Analyse de vulnérabilités
+
+OWASP ZAP (Zed Attack Proxy) — Proxy de test automatisé + nombreuses extensions.
+Burp Suite (Community/Pro) — Plateforme d’interception de trafic HTTP/S très utilisée.
+Nikto — Scanner de vulnérabilités web simple et efficace.
+Arachni — Scanner web puissant pour détecter XSS, injections, etc.
+
+🧪 Scanners automatisés
+
+wpscan — Scanner de vulnérabilités pour WordPress.
+Joomscan — Pour sites Joomla.
+Nuclei — Scanner rapide de templates de vulnérabilités.
+Skipfish — Scanner web rapide.
+
+📡 Interception & manipulation HTTP
+
+Burp Suite
+OWASP ZAP
+mitmproxy — Proxy interactif en ligne de commande.
+Fiddler — Proxy web (principalement Windows).
+
+💉 Tests d’injections & fuzzing
+
+SQLMap — Automatisation de l’exploitation SQL Injection.
+wfuzz / ffuf — Fuzzers pour découvrir paramètres, fichiers, directories.
+DirBuster / Dirsearch — Pour brute-forcer les chemins (directories/files).
+
+🧠 Exploitation & post-exploitation
+
+Metasploit Framework — Pour exploiter des vulnérabilités connues (si tu as l’IP/site autorisé).
+BeEF — Framework d’exploitation de navigateurs (XSS avancé).
+
+🧪 Tests de sécurité API/Web modernes
+
+Postman + scripts de tests — Pour tester manuellement les API.
+Burp Intruder / Repeater — Pour tests ciblés et fuzzing.
+
+📊 Reporting & audit
+
+Dradis — Outil collaboratif pour rapports de pentest.
+Faraday — Plateforme de gestion d’audit (pentest).
+Serpico — Générateur de rapports.
