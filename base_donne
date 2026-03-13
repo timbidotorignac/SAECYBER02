@@ -1,0 +1,10 @@
+pour la base de donne :
+sqlite3 audit.db
+SQLite version 3.46.1 2024-08-13 09:16:08
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE IF NOT EXISTS audits (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    url TEXT NOT NULL,
+    date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    results TEXT NOT NULL   -- JSON contenant tous les résultats des outils
+);
