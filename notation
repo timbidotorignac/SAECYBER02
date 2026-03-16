@@ -1,0 +1,34 @@
+Point important : le CVSS mesure la gravité d’une vulnérabilité, pas le risque global d’un site. Donc une note /10 doit combiner la gravité, l’exposition réelle, et la couverture des tests.
+Méthode simple et défendable
+
+Commence à 10/10, puis retire des points selon les résultats.
+
+1) Classe les findings par sévérité
+
+Appuie-toi sur :
+
+CVSS pour les vulnérabilités identifiées ou mappables à une CVE. NVD indique bien que le score CVSS va de 0 à 10 et sert à exprimer la sévérité.
+
+OWASP WSTG pour structurer les tests web.
+
+OWASP ASVS pour juger le niveau de contrôle de sécurité attendu sur une application web. OWASP publie ASVS 5.0.0 comme version stable récente.
+
+2) Applique une pondération qui reflète l’impact réel
+
+Exemple pratique :
+
+Critique
+RCE, SQLi exploitable, auth bypass, admin exposé sans protection, upload menant à exécution
+→ -3 à -4 points chacun
+
+Élevé
+XSS stockée, IDOR sensible, TLS très faible, service d’admin exposé, version vulnérable avec exploit crédible
+→ -1.5 à -2.5 points
+
+Moyen
+headers manquants, répertoire listing, fuite d’info utile, méthode HTTP dangereuse, cookies partiellement mal configurés
+→ -0.5 à -1 point
+
+Faible
+banner disclosure, page par défaut, détails techniques mineurs
+→ -0.1 à -0.3 point
